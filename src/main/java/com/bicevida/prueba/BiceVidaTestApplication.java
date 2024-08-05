@@ -3,9 +3,7 @@ package com.bicevida.prueba;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -178,8 +176,8 @@ public class BiceVidaTestApplication {
                     return insurances.stream()
                             .anyMatch(seguro -> seguro.getName().equals("SEGURO APV") && seguro.getId() == account.getInsuranceId());
                 })
-                .filter(account -> account.getBalance() > 30000)
                 .map(Cuenta::getBalance)
+                .filter(balance -> balance > 30000)
                 .sorted((b1, b2) -> Integer.compare(b2, b1))
                 .toList();
     }

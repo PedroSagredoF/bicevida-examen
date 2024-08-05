@@ -1,6 +1,5 @@
 package com.bicevida.prueba;
 
-import jdk.jfr.DataAmount;
 import lombok.Data;
 
 @Data
