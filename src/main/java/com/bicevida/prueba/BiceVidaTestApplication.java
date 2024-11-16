@@ -17,21 +17,21 @@ public class BiceVidaTestApplication {
 
         System.out.println("\n- IDs de Clientes");
         System.out.println(listClientsIds());
-        System.out.println("_____________________________");
+        System.out.println("___________________________");
 
         System.out.println("\n- IDs de Clientes ordenados por Rut");
         System.out.println(listClientsIdsSortedByRUT());
-        System.out.println("_____________________________");
+        System.out.println("____________________________");
 
         System.out.println("\n- Nombres de clientes ordenados de mayor a menor por la suma TOTAL\n" +
                 "de los saldos de cada cliente en los seguros que participa:");
         System.out.println(sortClientsTotalBalances());
-        System.out.println("_____________________________");
+        System.out.println("___________________________");
 
         System.out.println("\n- Objeto donde las claves son los nombres de los seguros y los\n" +
                 "valores un arreglo con los RUTs de sus clientes ordenados alfabéticamente por nombre.");
         System.out.println(insuranceClientsByRUT());
-        System.out.println("_____________________________");
+        System.out.println("___________________________");
 
         System.out.println("\n- Arreglo ordenado decrecientemente con los saldos de clientes que\n" +
                 "tengan más de 30.000 en el \"Seguro APV\".");
